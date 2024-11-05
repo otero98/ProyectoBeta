@@ -1,0 +1,30 @@
+/* src/App.css */
+.app {
+  display: flex;
+  height: 100vh;
+}
+
+.main-content {
+  padding: 20px;
+  flex: 1;
+  margin-top: 64px;
+  transition: margin-left 0.3s ease;
+}
+
+
+/* Media query para pantallas grandes */
+@media (min-width: 768px) {
+  .main-content.with-sidebar {
+    padding-left: 260px;
+    /* Deja espacio cuando el sidebar está visible */
+    margin-left: 0;
+    /* Sin margen extra cuando sidebar está visible */
+  }
+
+  .main-content.full-width {
+    padding-left: 0;
+    /* Ocupa todo el ancho cuando el sidebar está oculto */
+    margin-left: 20px;
+    /* Margen adicional a la izquierda para despegarlo */
+  }
+}

@@ -1,0 +1,39 @@
+/* src/components/Navbar.css */
+.navbar {
+    background-color: #0072d1;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* Centra verticalmente */
+    padding: 0 20px;
+    position: fixed;
+    /* Fija el navbar en la parte superior */
+    top: 0;
+    left: 0;
+    right: 0;
+    /* Asegúrate de que ocupa todo el ancho */
+    z-index: 1000;
+    /* Mantiene el navbar encima del sidebar */
+    /* height: 64px; Define la altura del navbar */
+    height: 54px; /* Define la altura del navbar */
+}
+
+
+.navbar-links a {
+    color: white;
+    margin: 0 1rem;
+    text-decoration: none;
+}
+
+.navbar-links a:hover {
+    text-decoration: underline;
+}
+
+.menu-icon {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
